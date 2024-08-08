@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Admin Panel</h1>
+        <form id="addProductForm" class="mb-4">
+            <div class="form-group">
+                <input type="text" id="productName" class="form-control" placeholder="Product Name" required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="productPrice" class="form-control" placeholder="Price" required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="productStock" class="form-control" placeholder="Stock Quantity" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="productVariations" class="form-control" placeholder="Product Variations (comma separated)">
+            </div>
+            <div class="form-group">
+                <input type="file" id="productImage" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Add Product</button>
+        </form>
+        <h2 class="text-center">Inventory</h2>
+        <ul id="productList" class="list-group"></ul>
+    </div>
+
+    <!-- Modal for editing product -->
+    <div class="modal fade" id="editProductModal" tabindex="-1" aria-labelledby="editProductModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editProductModalLabel">Edit Product</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="editProductForm">
+                        <input type="hidden" id="editProductId">
+                        <div class="form-group">
+                            <input type="text" id="editProductName" class="form-control" placeholder="Product Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="editProductPrice" class="form-control" placeholder="Price" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="editProductStock" class="form-control" placeholder="Stock Quantity" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="editProductVariations" class="form-control" placeholder="Product Variations (comma separated)">
+                        </div>
+                        <div class="form-group">
+                            <input type="file" id="editProductImage" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

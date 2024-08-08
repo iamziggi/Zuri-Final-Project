@@ -1,0 +1,125 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #00bcd4;
+}
+
+form {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+input, button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+input {
+    background-color: #3e3e3e;
+    color: #ffffff;
+}
+
+button {
+    background-color: #00bcd4;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0097a7;
+}
+
+.list-group-item {
+    background-color: #2e2e2e;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.list-group-item:hover {
+    transform: scale(1.02);
+}
+
+.modal-content {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: none;
+}
+
+.modal-header, .modal-body {
+    border: none;
+}
+
+.modal-title {
+    color: #00bcd4;
+}
+
+.close {
+    color: #ffffff;
+}
+
+.modal-header .close:hover {
+    color: #ff4081;
+}
+
+.edit-button, .delete-button, .hide-button {
+    margin-right: 5px;
+}
+
+.edit-button {
+    background-color: #ffc107;
+    border: none;
+    color: #000000;
+}
+
+.edit-button:hover {
+    background-color: #ffb300;
+}
+
+.delete-button {
+    background-color: #f44336;
+    border: none;
+    color: #ffffff;
+}
+
+.delete-button:hover {
+    background-color: #e53935;
+}
+
+.hide-button {
+    background-color: #9c27b0;
+    border: none;
+    color: #ffffff;
+}
+
+.hide-button:hover {
+    background-color: #8e24aa;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
